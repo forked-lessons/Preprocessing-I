@@ -53,11 +53,11 @@ table {
     box-sizing: border-box;
 }
 html {
-	font-size: 62.5%
+	font-size: 62.5%;
 }
 html, body {
 	height: 100%;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: @font-family;
 }
 
 h1, h2, h3, h4, h5 {
@@ -65,11 +65,16 @@ h1, h2, h3, h4, h5 {
 	margin-bottom: 2rem;
 	font-size: 1.6rem;
 }
+p, li {
+	font-size: 1.6rem;
+}
+
 // COLORS
 @yellow-color : #F3C72A;
 @red-color : #71262D;
 @green-color: #123A31;
 @blue-color: #5E6E63;
+@font-family: Arial, Helvetica, sans-serif;
 //		MIXINS
 .margin-2() {
 	margin: 2%;
@@ -95,7 +100,7 @@ h1, h2, h3, h4, h5 {
 .border-red() {
 	border: solid 2px @red-color;
 }
-.border-blue {
+.border-blue() {
 	border: 1px dashed @green-color;
 }
 .list-format() {
@@ -123,38 +128,42 @@ h1, h2, h3, h4, h5 {
     max-width: 100%;
     margin: 0 auto;
 	padding: 20px 1.25%;
-
-		header {
-			background-color: @green-color;
-		}
+	
+	header {
+		background-color: @green-color;
+		font-size: 2rem;
 		nav {
 		display: flex;
 		.center-content;
 		}
 		nav a {
 		margin: 0% 2%;
-		padding: 2% 5%;
-		font-size: 2rem;
+		padding: 2% 3%;
 		text-decoration: none;
 		color: @yellow-color;
+		font-size: 2rem;
 		}
 		nav a:hover {
 			background-color: @red-color;
 		}
+		
 		h1 {
-			font-size: 4rem;
+		font-size: 4rem;
 			.margin-2;
 		}
 		h2 {
-			font-size: 2.5rem;
-			color: @blue-color;
+		font-size: 2.5rem;
+		color: @blue-color;
 			.padding-2;
 		}
 		p, li {
-			font-size: 1.8rem;
 			.padding-2;
 		}
+	}
+		
+	
 }
+		
 .banner-content {
 	display: flex;
 	justify-content: space-around;
@@ -175,6 +184,10 @@ h1, h2, h3, h4, h5 {
 	img {
 		height: auto;
 		max-width: 100%;
+		
+		@media screen and (max-width: 500px) {
+			display: none;
+		}
 	}
 }	
 

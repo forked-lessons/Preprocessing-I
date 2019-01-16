@@ -147,8 +147,9 @@ h5 {
   margin-bottom: 2rem;
   font-size: 1.6rem;
 }
-.border-blue {
-  border: 1px dashed #123A31;
+p,
+li {
+  font-size: 1.6rem;
 }
 .container {
   max-width: 900px;
@@ -158,35 +159,35 @@ h5 {
 }
 .container header {
   background-color: #123A31;
+  font-size: 2rem;
 }
-.container nav {
+.container header nav {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
-.container nav a {
+.container header nav a {
   margin: 0% 2%;
-  padding: 2% 5%;
-  font-size: 2rem;
+  padding: 2% 3%;
   text-decoration: none;
   color: #F3C72A;
+  font-size: 2rem;
 }
-.container nav a:hover {
+.container header nav a:hover {
   background-color: #71262D;
 }
-.container h1 {
+.container header h1 {
   font-size: 4rem;
   margin: 2%;
 }
-.container h2 {
+.container header h2 {
   font-size: 2.5rem;
   color: #5E6E63;
   padding: 2%;
 }
-.container p,
-.container li {
-  font-size: 1.8rem;
+.container header p,
+.container header li {
   padding: 2%;
 }
 .banner-content {
@@ -216,6 +217,11 @@ h5 {
 .banner-content img {
   height: auto;
   max-width: 100%;
+}
+@media screen and (max-width: 500px) {
+  .banner-content img {
+    display: none;
+  }
 }
 .middle-content {
   width: 100%;
