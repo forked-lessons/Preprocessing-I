@@ -167,6 +167,12 @@ li {
   align-items: center;
   align-content: center;
 }
+@media (max-width: 500px) {
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .container header nav a {
   margin: 0% 2%;
   padding: 2% 3%;

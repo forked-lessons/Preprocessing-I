@@ -132,10 +132,17 @@ p, li {
 	header {
 		background-color: @green-color;
 		font-size: 2rem;
+		
 		nav {
-		display: flex;
-		.center-content;
-		}
+			display: flex;
+			.center-content;
+		
+			@media (max-width: 500px) {
+				display: flex;
+				flex-direction: column;
+				}
+			}	
+		
 		nav a {
 		margin: 0% 2%;
 		padding: 2% 3%;
@@ -163,7 +170,7 @@ p, li {
 		
 	
 }
-		
+	
 .banner-content {
 	display: flex;
 	justify-content: space-around;
@@ -172,6 +179,9 @@ p, li {
 	.padding-2;
 	.border-red;
 
+	@media screen and (max-width: 500px) {
+		
+	}
 	.banner-text {
 		width: 50%;
 		flex-direction: column;
