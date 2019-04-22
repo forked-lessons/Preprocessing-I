@@ -1,1 +1,349 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+p,
+li {
+  font-size: 1.6rem;
+}
+.container {
+  max-width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 1.25%;
+}
+.container header {
+  background-color: #123A31;
+  font-size: 2rem;
+}
+.container header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container header nav a {
+  margin: 0% 2%;
+  padding: 2% 3%;
+  text-decoration: none;
+  color: #F3C72A;
+  font-size: 2rem;
+}
+.container header nav a:hover {
+  background-color: #71262D;
+}
+.container header h1 {
+  font-size: 4rem;
+  margin: 2%;
+}
+.container header h2 {
+  font-size: 2.5rem;
+  color: #5E6E63;
+  padding: 2%;
+}
+.container header p,
+.container header li {
+  padding: 2%;
+}
+.banner-content {
+  display: flex;
+  justify-content: space-around;
+  background-color: #F3C72A;
+  color: #71262D;
+  padding: 2%;
+  border: solid 2px #71262D;
+}
+.banner-content .banner-text {
+  width: 50%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.banner-content button {
+  background: #5E6E63;
+  color: #123A31;
+  text-align: center;
+  padding: 3% 5%;
+  border: solid 2px #71262D;
+  margin: 2%;
+}
+.banner-content img {
+  height: auto;
+  max-width: 100%;
+}
+@media screen and (max-width: 500px) {
+  .banner-content img {
+    display: none;
+  }
+}
+.middle-content {
+  width: 100%;
+  display: flex;
+  border: 1px dashed #123A31;
+  background-color: #71262D;
+  line-height: 2.5rem;
+}
+.middle-content p,
+.middle-content li {
+  color: #F3C72A;
+}
+.middle-content h2 {
+  color: #123A31;
+}
+.middle-content .left-content {
+  width: 50%;
+  margin: 2%;
+}
+.middle-content .left-content h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.middle-content .left-content p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.middle-content .right-column {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.middle-content .right-column ul {
+  margin: 2%;
+  padding: 2% 5%;
+  border: 1px dashed #123A31;
+}
+.middle-content .right-column li {
+  margin: 2%;
+  border-bottom: #F3C72A 1px solid;
+  list-style-type: square;
+}
+.bottom-content {
+  border: solid 2px #71262D;
+  background-color: #5E6E63;
+  text-align: center;
+}
+.bottom-content h2,
+.bottom-content p {
+  color: #71262D;
+}
+.bottom-content table {
+  line-height: 4rem;
+  font-size: 2rem;
+  width: 75%;
+  border: solid 2px #71262D;
+}
+.bottom-content table th {
+  line-height: 4rem;
+  font-size: 2.5rem;
+  border: 1px dashed #123A31;
+}
+.bottom-content table tr {
+  border: 1px dashed #123A31;
+}
+footer {
+  background-color: #123A31;
+  border: solid 2px #71262D;
+}
+footer p {
+  text-align: center;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+}
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #F3C72A;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #123A31;
+}
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #71262D;
+  color: white;
+  padding: 20px;
+}
